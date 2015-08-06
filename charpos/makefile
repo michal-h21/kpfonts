@@ -12,8 +12,8 @@ clean:
 
 %.htm:
 	latex -halt-on-error -jobname $* "\def\fontlist{$*}\input{tex4ht_hcode}\HCode charpos.cfg,html,charset=utf-8.a.b.c.\input{charpos}"
-	latex -halt-on-error -jobname $* "\def\fontlist{$*}\input{tex4ht_hcode}\HCode charpos.cfg,html,charset=utf-8.a.b.c.\input{charpos}"
-	latex -halt-on-error -jobname $* "\def\fontlist{$*}\input{tex4ht_hcode}\HCode charpos.cfg,html,charset=utf-8.a.b.c.\input{charpos}"
+#	latex -halt-on-error -jobname $* "\def\fontlist{$*}\input{tex4ht_hcode}\HCode charpos.cfg,html,charset=utf-8.a.b.c.\input{charpos}"
+#	latex -halt-on-error -jobname $* "\def\fontlist{$*}\input{tex4ht_hcode}\HCode charpos.cfg,html,charset=utf-8.a.b.c.\input{charpos}"
 	tex4ht -cunihtf $*
 	t4ht   -cunihtf -p  $*
 

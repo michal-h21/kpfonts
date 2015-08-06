@@ -41,7 +41,7 @@
 
 
 \def\startpos{0}
-\def\stoppos{127}
+%\def\stoppos{127}
 \def\stoppos{255}
 \newcount\charpos
 
@@ -66,7 +66,7 @@
 
 %   \show\validchartrue
 
-
+  \typeout{charpos: \the\charpos }
 % \hbox{\hbox to 2pc{\hss\relax\charline\relax} \hspace{2em}  \left \hspace{1em}  \right\hss}\HCode{<br/><hr/>}\par
    \global\advance\charpos by1\relax
    \setbox0\hbox{\mfont\char\charpos}%
